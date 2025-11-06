@@ -34,6 +34,16 @@ fun TampilData(
     onBackBtnClick:()->Unit
 ){
 
+    Scaffold(modifier = Modifier,
 
+    ){isiRuang->
+        Column(
+            modifier = Modifier.padding(isiRuang),
+            verticalArrangement = Arrangement.SpaceBetween
+        ){
+
+        }
+
+    }
 
 }
