@@ -33,6 +33,11 @@ import com.example.pertemuan6.R
 fun TampilData(
     onBackBtnClick:()->Unit
 ){
+    val items = listOf(
+        Pair(stringResource(id = R.string.nama_lengkap), "Contoh Nama"),
+        Pair(stringResource(id = R.string.jenis_kelamin), "Lainnya"),
+        Pair(stringResource(id = R.string. alamat), "Yogyakarta"),
+    )
 
     Scaffold(modifier = Modifier,
         {
@@ -53,6 +58,13 @@ fun TampilData(
             modifier = Modifier.padding(isiRuang),
             verticalArrangement = Arrangement.SpaceBetween
         ){
+            Column(
+                modifier =  Modifier.padding(dimensionResource(id=R.dimen.padding_small))
+            ){
+                HorizontalDivider(thickness = 1.dp, color = Color.Cyan)
+
+            }
+            Spacer(modifier = Modifier.height(10.dp))
 
         }
 
