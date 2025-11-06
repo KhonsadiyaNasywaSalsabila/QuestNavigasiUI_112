@@ -57,6 +57,16 @@ fun FormIsian(
                 onValueChange = {},
             )
             Row{
+                jenisK.forEach {
+                        item->
+                    Row(verticalAlignment = Alignment.CenterVertically){
+                        RadioButton(
+                            selected = false,
+                            onClick = {item}
+                        )
+                        Text(text = item)
+                    }
+                }
 
             }
             OutlinedTextField(
@@ -67,8 +77,6 @@ fun FormIsian(
                 label = {Text(text = "Alamat")},
                 onValueChange = {},
             )
-
-
 
 
         }
